@@ -7,7 +7,7 @@ This is the thecnical challenge for join AUBAY SA  company as Python developer.
 
 **Python 3.8.x**
 
-**Flask newst version**
+**Flask newest version**
 
 **pip newest version**
 
