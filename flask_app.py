@@ -26,7 +26,7 @@ from AubayLib import (
 def hello():
     APP_INFO = '''
 
-    This is a AUBAY SA thecnical challenge for joing that company as a python developer
+    This is a AUBAY SA thecnical challenge for joing that company as a python developer. This is answer for question number 30.
 
     '''
 
