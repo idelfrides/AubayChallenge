@@ -50,6 +50,30 @@ def change(cash):
     return response_
 
 
+def question29(x_value, y_value):
+
+    """
+    # Question 29
+    ---
+    #### This a solution for question number 29. I am not sure about that number. But the problem was ...
+
+    #### Return 'True' if a sum of x_value and y_value eguals to 1 or if one of them is 1. Return 'False' otherwise.
+
+    """
+
+    status_ = False
+
+    if (x_value + y_value) == 1:
+        status_ = True
+    elif x_value == 1 or y_value == 1:
+        status_ = True
+    else:
+        pass
+
+    return status_
+
+
+
 def start_bill_qtd():
     return 0, 0, 0
 

@@ -12,7 +12,7 @@ from flask import request
 
 
 from AubayLib import (
-    change, AubayChallenge, make_reponse
+    change, AubayChallenge, make_reponse, question29
 )
 #-------------------------------------------------------------------------
 #                  RUN APP FUNCTION BEGIN HERE
@@ -35,15 +35,8 @@ def hello():
 
 @__app__.route('/aubay_question29/<x_value>/<y_value>')
 def solving_question_29(x_value, y_value):
-    status_ = False
 
-
-    if (int(x_value) + int(y_value)) == 1:
-        status_ = True
-    elif int(x_value) == 1 or int(y_value) == 1:
-        status_ = True
-    else:
-        pass
+    status_  = question29(int(x_value), int(y_value))
 
     response_ = f'aubay_question29 | RESULT: {status_}'
 
