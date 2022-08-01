@@ -33,6 +33,22 @@ def hello():
     return APP_INFO
 
 
+@__app__.route('/aubay_question29/<x_value>/<y_value>')
+def solving_question_29(x_value, y_value):
+    status_ = False
+
+
+    if (int(x_value) + int(y_value)) == 1:
+        status_ = True
+    elif int(x_value) == 1 or int(y_value) == 1:
+        status_ = True
+    else:
+        pass
+
+    response_ = f'aubay_question29 | RESULT: {status_}'
+
+    return make_reponse(response_)
+
 
 @__app__.route('/aubay_runapp_round/<totalround_>')
 def aubay_runapp_round(totalround_):
@@ -138,3 +154,10 @@ if __name__ == '__main__':
     __app__.run(
         __app__.config['FLASK_HOST'], port=__app__.config['FLASK_PORT']
     )
+
+'''
+python -m pip install -U autopep8
+
+pip install -U autopep8
+
+'''
