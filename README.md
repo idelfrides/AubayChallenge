@@ -60,13 +60,13 @@ If you are using fish, write
      Example:
           curl "http://localhost:7200/aubay_runapp_round/10"
 
-     This endpint will random cash value between 1 and 10000.
+     That endpoint (/aubay_runapp_round ) run app ROUND_NUMBER times and will random a cash value between 1 and 10000 for each round. 
 
-### 9 | To test question 29 run app by calling curl with  X_VALUE AND Y_VALUE as url parameter, like this
+### 9 | To test question number 29 run app by calling curl with X_VALUE and  Y_VALUE as url parameter, like this
 
      curl "http://localhost:7200/aubay_question29/X_VALUE/Y_VALUE"
 
-     Example:
+     Examples:
           curl "http://localhost:7200/aubay_question29/1/1"      --> True
           curl "http://localhost:7200/aubay_question29/1/100"    --> True
           curl "http://localhost:7200/aubay_question29/9/1"      --> True
@@ -76,5 +76,5 @@ If you are using fish, write
           curl "http://localhost:7200/aubay_question29/7/70"     --> False
 
 
-### **NOTE 1** I am not sure about that number. But the problem was ...
-### Return 'True' if a sum of x_value and y_value eguals to 1 or if one of them is 1. Return 'False' otherwise.
+### **NOTE 1** I am not sure about that number (29) of question, but the problem was ...
+### a function receive two values (x, y), then return 'True' if the sum of x and y eguals to 1 or if one of them is 1. Return 'False' otherwise.
