@@ -147,10 +147,3 @@ if __name__ == '__main__':
     __app__.run(
         __app__.config['FLASK_HOST'], port=__app__.config['FLASK_PORT']
     )
-
-'''
-python -m pip install -U autopep8
-
-pip install -U autopep8
-
-'''
